@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-03T18:04:24 IST" name="CST5354" finished-at="2023-07-03T18:04:54 IST" duration-ms="29568">
+    <groups>
+    </groups>
+    <test started-at="2023-07-03T18:04:24 IST" name="Test" finished-at="2023-07-03T18:04:54 IST" duration-ms="29568">
+      <class name="Tests.LoginTest2">
+        <test-method is-config="true" signature="tearUp(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTest2@6356695f]" started-at="2023-07-03T18:04:25 IST" name="tearUp" finished-at="2023-07-03T18:04:50 IST" duration-ms="25815" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginTest2.verifyLoginUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="verifyLoginUrl()[pri:0, instance:Tests.LoginTest2@6356695f]" started-at="2023-07-03T18:04:50 IST" name="verifyLoginUrl" description="Verify Login Url" finished-at="2023-07-03T18:04:53 IST" duration-ms="2496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest2@6356695f]" started-at="2023-07-03T18:04:53 IST" name="tearDown" finished-at="2023-07-03T18:04:54 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoginTest2 -->
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="loadPropertyFile()[pri:0, instance:Tests.LoginTest@3bb9a3ff]" started-at="2023-07-03T18:04:24 IST" name="loadPropertyFile" finished-at="2023-07-03T18:04:24 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPropertyFile -->
+        <test-method is-config="true" signature="tearUp(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTest@3bb9a3ff]" started-at="2023-07-03T18:04:25 IST" name="tearUp" finished-at="2023-07-03T18:04:50 IST" duration-ms="25335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginTest.verifyLoginTitle(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="verifyLoginTitle(java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginTest@3bb9a3ff]" started-at="2023-07-03T18:04:50 IST" name="verifyLoginTitle" description="Verify Login Tile" data-provider="getData" finished-at="2023-07-03T18:04:53 IST" duration-ms="2889" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual Title :OrangeHRM does not match with exp title: OrangeHRM123 expected [OrangeHRM123] but found [OrangeHRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual Title :OrangeHRM does not match with exp title: OrangeHRM123 expected [OrangeHRM123] but found [OrangeHRM]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Tests.LoginTest.verifyLoginTitle(LoginTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@3bb9a3ff]" started-at="2023-07-03T18:04:54 IST" name="tearDown" finished-at="2023-07-03T18:04:54 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- CST5354 -->
+</testng-results>
