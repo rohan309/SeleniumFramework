@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 @Target({METHOD})
 public @interface FrameworkAnnotations {
 
-	String author()   default "";
-	String category() default "";
+    String author() default "";
+
+    String category() default "";
 }
